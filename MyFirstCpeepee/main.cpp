@@ -6,10 +6,19 @@
 //  Copyright © 2018 Brailow Inc. All rights reserved.
 //
 
+
+//preprocessor commands don't have a semicolon
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
+using namespace std;
+
+int oldMain()
+{
     // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    cout << "Hello, World!\n" << endl;
+    string input;
+    getline(cin, input);
+    cout << "U sed: " << input << endl;
+    
+    return 255;
 }
